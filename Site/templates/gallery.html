@@ -1,0 +1,164 @@
+{% extends 'headerfooter.html' %}
+{% block content %}
+
+        <!--=====================================-->
+        <!--=            Gallery Start          =-->
+        <!--=====================================-->
+       
+        <!--=====================================-->
+        <!--=            Brand Start            =-->
+        <!--=====================================-->
+        <section class="brand-wrap-layout1 brand-wrap-layout2">
+            <div class="container">
+                <div class="row gutters-6">
+                    <!-- <div class="col-lg-8">
+                        <div class="gallery-box1">
+                            <div class="item-img">
+                                <a href="#"><img src="{{img1.gallery.url}}" alt="gallery" width="530" height="337"></a>
+                                <div class="item-content">
+                                    <h2 class="heading-title">{{img1.name}}</h2>
+                                    <h3 class="heading-subtitle">{{img1.subtitle}}</h3>
+                                </div>
+                                <div class="item-button">
+                                    <a href="single-portfolio.html" class="item-btn">+ <span>Read More</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="gallery-box1">
+                            <div class="item-img">
+                                <a href="#"><img src="{{img2.gallery.url}}" alt="gallery" width="530" height="337"></a>
+                                <div class="item-content"3>
+                                    <h2 class="heading-title">{{img2.name}}</h2>
+                                    <h3 class="heading-subtitle">{{img2.subtitle}}</h3>
+                                </div>
+                                <div class="item-button item-button2">
+                                    <a href="single-portfolio.html" class="item-btn">+ <span>Read More</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-box1 gallery-box2">
+                            <div class="item-img">
+                                <a href="#"><img src="{{img3.gallery.url}}" alt="gallery" width="530" height="337"></a>
+                                <div class="item-content">
+                                    <h2 class="heading-title">{{img3.name}}</h2>
+                                    <h3 class="heading-subtitle">{{img3.subtitle}}</h3>
+                                </div>
+                                <div class="item-button item-button2">
+                                    <a href="single-portfolio.html" class="item-btn">+ <span>Read More</span></a>
+                                </div>
+                            </div>    
+                        </div>
+                    </div> -->
+                    
+                     {% for x in gall %}
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="gallery-box1">
+                            <div class="item-img">
+                                <a href="#"><img src="{{x.gallery.url}}" alt="gallery" width="530" height="337"></a>
+                                <div class="item-content">
+                                    <h2 class="heading-title">{{x.name}}</h2>
+                                    <h3 class="heading-subtitle">{{x.subtitle}}</h3>
+                                </div>
+                                <div class="item-button item-button2">
+                                    <a href="single-portfolio.html" class="item-btn">+ <span>Read More</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    
+                    <!-- <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="gallery-box1">
+                            <div class="item-img">
+                                <a href="#"><img src="{{img5.gallery.url}}" alt="gallery" width="530" height="337"></a>
+                                <div class="item-content">
+                                    <h2 class="heading-title">{{img5.name}}</h2>
+                                    <h3 class="heading-subtitle">{{img5.subtitle}}</h3>
+                                </div>
+                                <div class="item-button item-button2">
+                                    <a href="single-portfolio.html" class="item-btn">+ <span>Read More</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="gallery-box1">
+                            <div class="item-img">
+                                <a href="#"><img src="{{img6.gallery.url}}" alt="gallery" width="530" height="337"></a>
+                                <div class="item-content">
+                                    <h2 class="heading-title">{{img6.name}}</h2>
+                                    <h3 class="heading-subtitle">{{img6.subtitle}}</h3>
+                                </div>
+                                <div class="item-button item-button2">
+                                    <a href="single-portfolio.html" class="item-btn">+ <span>Read More</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+        </section>
+        <!--=====================================-->
+        <!--=            Personal Start         =-->
+        <!--=====================================-->
+        <section class="personal-info-wrap2">
+            <div class="figure-img1">
+                <img src="/static/img/figure/figure5.png" alt="figure" width="872" height="724">
+            </div>
+            <div class="figure-img2">
+                <img src="/static/img/figure/figure6.png" alt="figure" width="487" height="269">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="personal-info-box2">
+                            <h2 class="section-title">New York City</h2>
+                            <ul class="information-list">
+                                <li>120 F 2th Yt, New York NY 1259</li>
+                                <li>+1 (212) 333-7888</li>
+                                <li>email@example.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="personal-info-box2">
+                            <h2 class="section-title">Melbourne City</h2>
+                            <ul class="information-list">
+                                <li>120 F 2th Yt, New York NY 1259</li>
+                                <li>+1 (212) 333-7888</li>
+                                <li>email@example.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="personal-info-box2">
+                            <h2 class="section-title">Melbourne City</h2>
+                            <ul class="information-list">
+                                <li>120 F 2th Yt, New York NY 1259</li>
+                                <li>+1 (212) 333-7888</li>
+                                <li>email@example.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="figure-img1">
+                    <img src="/static//static/img/figure/figure5.png" alt="figure" width="872" height="724">
+                </div>
+                <div class="color-overlay1">
+                    <img src="/static/img/figure/figure51.png" alt="figure" width="287" height="375">
+                </div>
+                <div class="color-overlay2">
+                    <img src="/static/img/figure/figure52.png" alt="figure" width="196" height="563">
+                </div>
+            </div>
+            <div class="figure-img2">
+                <img src="/static/img/figure/figure6.png" alt="figure" width="487" height="269">
+            </div>
+        </section>
+        <!--=====================================-->
+        <!--=      Footer Start                 =-->
+        <!--=====================================-->
+{% endblock %}
